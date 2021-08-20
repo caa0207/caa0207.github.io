@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <title>Caleb's Fabulous Website</title>
+      <style>
+          img{
+              width:400px;
+              height:220px;
+              border-radius:10px;
+          }
+        body {
+            background: rgb(125, 198, 205);
+            color: rgb(45, 45, 45);
+            padding: 10px;
+            font-family: arial;
+        }
+        #all-contents {
+            max-width: 800px;
+            margin: auto;
+        }
+    
+        /* navigation menu */
+        nav {
+            background: rgb(67, 228, 214);
+            margin: 0 auto;
+            margin-bottom: 20px;
+            display: flex;
+            padding: 10px;
+            border-radius: 30px;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            color: rgb(206, 63, 20);
+            flex: 1;
+            margin: 0;
+        }
+        #nav-ul {
+            list-style-image: none;
+        }
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(92, 240, 183);
+        }
+    
+        /* main container area beneath menu */
+        main {
+            background: rgb(240, 179, 13);
+            display: flex;
+        }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar-img {
+            width: 200px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        #interests {
+            border: 4px rgb(103, 216, 146) ridge;
+            padding: 8px;
+        }
+        h2, h3 {
+            margin: 0px;
+        }
+    </style>
+    </head>
+    
+    <body>
+       <!-- All content goes here -->
+       <div id="all-contents">
+    <div> 
+        <nav>
+            <h1>Caleb's Fabulous Website </h1>
+            <ul id=nav-ul>
+                <li class=nav-li>
+                    <a href="index.html"> Home </a>
+                </li>
+                <li class=nav-li>
+                    <a href="portfolio.html"> Portfolio </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+             <!-- Sidebar section -->
+    <div class=sidebar>
+    <img class=sidebar-img src="https://mail.google.com/mail/u/0?ui=2&ik=082ebf3d7d&attid=0.1.1&permmsgid=msg-f:1707933557583685082&th=17b3cc8587bea5da&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ9Hs8R4MSu6ubw1G1JUD6fYrNUMkE6oWbTLxih9SjfvcdG-Yo1V-bPqKvhcABbsV3zR7na2rU_KiD95CXPW-Ryb-VVtUjs8DRU9lfKRAiVLhAi-YhHJOL7BPDs&disp=emb">
+    </div>
+
+    <!-- Content section -->
+    <div class=content>
+      <h2>Caleb Andrews</h2>
+      <p>Student at Belle Chasse High School</p>
+      <!-- Interests section -->
+    <div id =interests>
+        <h3>Interests</h3>
+        <ul>
+            <li>Baseball</li>
+            <li>Wrestling</li>
+            <li>Video Games</li>
+            <li>Cornhole</li>
+            <li>Working Out</li>
+        </ul>
+    </div>
+    </div>
+        </main>
+    </div>
+    </body>
+</html>
