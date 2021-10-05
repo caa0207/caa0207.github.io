@@ -17,7 +17,12 @@
 			left: 0px;  /* <--- Change me! */
 		}
 		.board{
-			height: 100vh;
+			height: 50vh;
+			width: auto;
+			background-image: url("https://www.njmarlins.com/wp-content/uploads/sites/692/2015/04/baseball-field-background-wallpaper-4.jpg");
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position: center;
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -39,6 +44,7 @@
 			var box = jQuery('.box');	// reference to the HTML .box element
 			var board = jQuery('.board');	// reference to the HTML .board element
 			var boardWidth = board.width();	// the maximum X-Coordinate of the screen
+			
 
 			// Every 50 milliseconds, call the update Function (see below)
 			setInterval(update, 50);
@@ -63,6 +69,7 @@
 			// TODO 2 - Variable declarations 
 			var positionX = 0;
 			var points = 0;
+			changeBoxText(0);
 			var speed = 10;
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
