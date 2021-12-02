@@ -22,6 +22,8 @@ var init = function (window) {
         // TODO 1 : Declare and initialize our variables
         var circle;
         var circles = [];
+        var numberCircles = Number(prompt("How many circles would you like to have on the screen?"));
+        
         // TODO 2 : Create a function that draws a circle 
         function drawCircle(){
             circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
@@ -31,10 +33,8 @@ var init = function (window) {
         }
 
         // TODO 3 / 8 : Call the drawCircle() function 
-        for(var loops = 0; loops < 100; loops++){
+        for(var i = 0; i < numberCircles; i++){
             drawCircle();
-            physikz.updatePosition(eachCircle);
-            game.checkCirclePosition(eachCircle);
         }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -47,17 +47,19 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-
+            for(var i = 0; i < circles.length; i++){
+                physikz.updatePosition(circles[i]);
+            }
             //called functions inside of for loop above
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-
+            for(var i = 0; i < circles.length; i++){
+                game.checkCirclePosition(circles[i]);
+            }
            //called functions inside of for loop above
 
             // TODO 9 : Iterate over the array
-            for (var i = 0; i < myArray.length; i++) {
-                var eachCircle = myArray[i];
-            }
+            
             
         }
     
